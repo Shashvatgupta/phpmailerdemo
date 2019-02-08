@@ -14,7 +14,7 @@
    require 'PHPMailer-master/PHPMailerAutoload.php'; //php mailer class
    $mail = new PHPMailer();
    $mail ->IsSmtp();
-   $mail ->SMTPDebug = 0;
+   $mail ->SMTPDebug = 0; // 0 for not showing any details and 1 for showing details.
    $mail ->SMTPAuth = true;
    $mail ->SMTPSecure = 'ssl'; // secure layer.
    $mail ->Host = "smtp.gmail.com";
